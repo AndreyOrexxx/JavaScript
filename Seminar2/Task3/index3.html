@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let day = Number(prompt("Введите любое число месяца от 1 до 31:"));
+      if (day >= 1 && day <= 10) {
+        console.log("Первая декада месяца");
+      } else if (day >= 11 && day <= 20) {
+        console.log("Вторая декада месяца");
+      } else if (day >= 21 && day <= 31) {
+        console.log("Третья декада месяца");
+      } else {
+        console.log("В месяце такого числа нет");
+      }
+    </script>
+  </body>
+</html>

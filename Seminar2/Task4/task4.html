@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = Number(prompt("Введите положительное целое число:"));
+      confirm("Все верно ввели ?");
+      let units = num % 10;
+      let dozens = Math.floor((num /= 10)) % 10;
+      let hundreds = Math.floor((num /= 10)) % 10;
+      let thousands = Math.floor((num /= 10)) % 10;
+      console.log(
+        `В числе ${num} количество тысяч: ${thousands}, сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}.`
+      );
+    </script>
+  </body>
+</html>
