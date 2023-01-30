@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const salary = (money) => {
+        return money * 0.87;
+      };
+      const userMony = Number(prompt("Введите размер вашей заработной платы:"));
+      if (userMony === NaN) {
+        alert("Значение задано неверно");
+      } else {
+        alert("Проходим дальше");
+      }
+      console.log(
+        `Размер заработной платы за вычетом налогов равен: ${salary(userMony)}`
+      );
+    </script>
+  </body>
+</html>

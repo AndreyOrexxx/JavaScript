@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = Number(prompt("Введите первое число:"));
+      let b = Number(prompt("Введите второе число:"));
+      const sum = (a, b) => {
+        sumNumber = a + b;
+        return sumNumber;
+      };
+      sum(a, b);
+      console.log(`Сумма чисел равна: ${sumNumber}`);
+      const differense = (a, b) => {
+        if (a > b) {
+          difNumber = a - b;
+        } else {
+          difNumber = b - a;
+        }
+        return difNumber;
+      };
+      differense(a, b);
+      console.log(`Разность чисел равна: ${difNumber}`);
+      const multiplication = (a, b) => {
+        multNumber = a * b;
+        return multNumber;
+      };
+      multiplication(a, b);
+      console.log(`Произведение чисел равно: ${multNumber}`);
+      const division = (a, b) => {
+        divNumber = a / b;
+        return divNumber;
+      };
+      division(a, b);
+      console.log(`Деление чисел равно: ${divNumber}`);
+    </script>
+  </body>
+</html>
