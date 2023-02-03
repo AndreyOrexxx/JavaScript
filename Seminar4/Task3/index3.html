@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const array = [];
+      for (let i = 0; i < 5; i++) {
+        array[i] = Math.round(Math.random(0, 9));
+      }
+      let sum = 0;
+      for (let j = 0; j < 5; j++) {
+        sum = sum += array[j];
+      }
+      let minNumber = array[0];
+      for (const item of array) {
+        if (item < minNumber) {
+          minNumber = item;
+        }
+      }
+      // const minNumber = Math.min(array[0], array[1], array[2], array[3], array[4]);
+      console.log(array);
+      console.log(sum);
+      console.log(minNumber);
+      if (array.indexOf(3) !== -1) {
+        console.log("В массиве есть число 3");
+      } else {
+        console.log("В массиве числа 3 нет");
+      }
+    </script>
+  </body>
+</html>
